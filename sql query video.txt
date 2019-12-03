@@ -1,0 +1,81 @@
+CREATE TABLE users(
+    id INT AUTO_INCREMENT,
+    first_name VARCHAR(100),
+    lasat_name VARCHAR(100),
+    email VARCHAR(75),
+    password VARCHAR(255),
+    location VARCHAR(100),
+    dept VARCHAR(75),
+    is_admin TINYINT(1),
+    register_date DATETIME,
+    PRIMARY KEY (id)
+);
+
+SELECT * FROM users;
+
+INSERT INTO users(first_name, last_name, email, password, location, dept, is_admin, register_date)
+VALUES(john,Doe,youremail,password,state,development,,now());
+
+SELECT * FROM acme.users;
+SELECT first_name, lastname
+SELECT * FROM users WHERE location="random place" and SALES de;
+SELECT * FROM users WHERE is_admin > 0;
+UPDATE users SET email = 'youremail' WHERE id = friend user
+ALTER TABLE users ADD age VARCHAR(3);
+ALTER TABLE users MODIFY COLUMN
+SELECT * FROM polling_app;
+SELECT * FROM users ORDER BY last_name DESC;
+SELECT CONTACT(first_name,  '  ',last_n) as 'name',debt FROM users
+SELECT DISTINCT location FROM users;
+SELECT * FROM users WHERE dept LIKE'%ES';
+SELECT FROM USERS WHERE dept 
+SELECT * FROM users WHERE DEPT IN('design','sales')
+CREATE INDEX Lindex on users(location)
+DROP INDEXLindexon users
+CREATE TABLE posts(
+    
+id INT auto_increment,
+user_id INT,
+TITLE VARCHAR(100).
+body text,
+publish_date DATETIME DEAFULAT CURRENT +TIMSTEP
+PRIMARY KEY(id),
+   );
+SELECT * FORM posts;
+SELECT 
+users.first_name,
+users.last_name,
+posts.title,
+posts.publish_date
+FROM users
+INNER JOIN posts
+ON user.id = posts.user_id
+ORDER BY posts.title;
+
+
+CREATE TABLE comments(
+id INT AUTO_INCREMENT,
+post_id INT,
+post_id INT,
+post TEXT,
+publish_date FATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+FOREIGN KEY(post_id) REFRENCES CUZ(id),
+FOREIGN KEY(user_id)
+);
+
+SELECT * FROM comments;
+
+SELECT 
+comments.body,
+posts.title
+FROM comments
+LEFT JOIN posts ON post.id = comments.post_id
+
+
+
+========================= ===============================
+show tables command
+drop table'table name'
+drop database 'database name'
+delete a row
